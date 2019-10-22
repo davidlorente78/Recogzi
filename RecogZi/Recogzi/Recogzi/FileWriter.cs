@@ -4,10 +4,8 @@ namespace Recogzi.FileWriters
 {
 	public static class FileWriter
 	{
-
-		static string path = @"C:\Users\dlorente\Desktop\RecogZi\dataset.csv";
-
-		public static void AddLine(string line)
+		
+		public static void AddLine(string line, string path)
 		{
 			if (!File.Exists(path))
 			{

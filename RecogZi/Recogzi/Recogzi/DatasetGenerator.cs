@@ -56,8 +56,10 @@ namespace Recogzi
 
 						var Projection = ProjectionService.GenerateProjectionfromFontChar(c, new Size(32, 32), 28);
 						Projection.Bitmap.Save(@"C:\Users\dlorente\Desktop\RecogZi\Bitmaps\" + c.ToString() + ".bmp");
-						var sequence = DatasetGenerator.ToZerosOnesSequence(c, Projection.Bitmap);
-						FileWriter.AddLine(sequence);
+						var sequence = ToZerosOnesSequence(c, Projection.Bitmap);
+						
+						string path = @"C:\Users\dlorente\Desktop\RecogZi\dataset.csv";
+						FileWriter.AddLine(sequence,path);
 					}
 				}
 			}

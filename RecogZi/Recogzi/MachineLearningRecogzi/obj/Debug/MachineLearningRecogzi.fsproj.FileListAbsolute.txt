@@ -18,7 +18,6 @@ C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\bin\Deb
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\bin\Debug\tr\FSharp.Core.resources.dll
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\bin\Debug\zh-Hans\FSharp.Core.resources.dll
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\bin\Debug\zh-Hant\FSharp.Core.resources.dll
-C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\obj\Debug\MachineLearningRecogzi.fsprojAssemblyReference.cache
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\obj\Debug\MachineLearningRecogzi.fsproj.CopyComplete
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\obj\Debug\MachineLearningRecogzi.exe
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\obj\Debug\MachineLearningRecogzi.pdb

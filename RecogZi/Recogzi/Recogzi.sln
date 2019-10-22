@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recogzi", "Recogzi\Recogzi.csproj", "{5D7DAC00-EC3E-44B2-8636-10E9059B8B95}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSKDomainServices", "..\..\..\HSK-5.0\DomainServices\HSKDomainServices.csproj", "{EC92C5B8-3691-455A-A4B8-B46670AB0260}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSKDomain", "..\..\..\HSK-5.0\Domain\HSKDomain.csproj", "{F863C3C1-F759-44ED-8776-9D380DCFF4CF}"
@@ -17,16 +15,14 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MachineLearningRecogzi", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subrip", "..\..\..\SubRip\Subrip\Subrip.csproj", "{DC5E2CB1-7B7C-490B-8584-A4B284B27A92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recog", "Recog\Recog.csproj", "{E7603081-1718-401A-8196-6538BB5D66AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5D7DAC00-EC3E-44B2-8636-10E9059B8B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D7DAC00-EC3E-44B2-8636-10E9059B8B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D7DAC00-EC3E-44B2-8636-10E9059B8B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D7DAC00-EC3E-44B2-8636-10E9059B8B95}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EC92C5B8-3691-455A-A4B8-B46670AB0260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EC92C5B8-3691-455A-A4B8-B46670AB0260}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC92C5B8-3691-455A-A4B8-B46670AB0260}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{DC5E2CB1-7B7C-490B-8584-A4B284B27A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC5E2CB1-7B7C-490B-8584-A4B284B27A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC5E2CB1-7B7C-490B-8584-A4B284B27A92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7603081-1718-401A-8196-6538BB5D66AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7603081-1718-401A-8196-6538BB5D66AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7603081-1718-401A-8196-6538BB5D66AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7603081-1718-401A-8196-6538BB5D66AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
