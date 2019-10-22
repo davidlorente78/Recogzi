@@ -18,8 +18,12 @@ let main argv =
         |>Array.map toObservation
 
     let datasetPath = @"C:\Users\dlorente\Desktop\Recogzi\dataset.csv"
+
+    let croppedPath = @"C:\Users\dlorente\Desktop\Recogzi\Cropped.csv"
      
     let data = reader datasetPath      
+
+    let croppedData = reader croppedPath
    
     
     let m = data.Length
@@ -32,7 +36,7 @@ let main argv =
 
     let trainingdata = data.[0..m-1]
 
-    let validationdata = data.[4901..4998]   
+    //let validationdata = data.[4901..4998]   
 
     let manhattanDistance (pixels1 : float [], pixels2 : float []) = 
         Array.zip pixels1 pixels2
@@ -55,21 +59,25 @@ let main argv =
 
     let euclidianClassifier = train trainingdata euclidianDistance
 
-    let numbertest = euclidianClassifier data.[34].Pixels
+    let niTest = euclidianClassifier croppedData.[0].Pixels
 
-    printf "Calculating Accurancy with Manhattan distance\n"
-    validationdata
-    |> Array.averageBy (fun x-> if manhattanClassifier x.Pixels = x.Label then 100. else 0.)
-    |> printfn "manhattanClassifier Correct %.3f "
+    let haoTest = euclidianClassifier croppedData.[1].Pixels
 
-    printf "Calculating Accurancy with Euclidian distance\n"
-    validationdata
-    |> Array.averageBy (fun x-> if euclidianClassifier x.Pixels = x.Label then 100. else 0.)
-    |> printfn "euclidianClassifier Correct %f "
 
-    printf "Calculating Accurancy using training data. Bad practice!"
-    trainingdata
-    |> Array.averageBy (fun x-> if euclidianClassifier x.Pixels = x.Label then 100. else 0.)
-    |> printfn "Using training data Correct %f "
+
+    //printf "Calculating Accurancy with Manhattan distance\n"
+    //validationdata
+    //|> Array.averageBy (fun x-> if manhattanClassifier x.Pixels = x.Label then 100. else 0.)
+    //|> printfn "manhattanClassifier Correct %.3f "
+
+    //printf "Calculating Accurancy with Euclidian distance\n"
+    //validationdata
+    //|> Array.averageBy (fun x-> if euclidianClassifier x.Pixels = x.Label then 100. else 0.)
+    //|> printfn "euclidianClassifier Correct %f "
+
+    //printf "Calculating Accurancy using training data. Bad practice!"
+    //trainingdata
+    //|> Array.averageBy (fun x-> if euclidianClassifier x.Pixels = x.Label then 100. else 0.)
+    //|> printfn "Using training data Correct %f "
     
     0 // return an integer exit code
