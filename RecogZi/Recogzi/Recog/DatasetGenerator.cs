@@ -39,7 +39,7 @@ namespace Recogzi
 			return sb.ToString();
 		}
 
-		public static void Generate() {
+		public static void GenerateDataSet() {
 
 			var hsk1 = ReaderFactory.GetHSKReader(1);
 			ArrayList words = hsk1.AllWords();
@@ -64,5 +64,8 @@ namespace Recogzi
 				}
 			}
 		}
+
+
+
 	}
 }
