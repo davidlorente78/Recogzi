@@ -4,6 +4,17 @@
     "C:\\Users\\dlorente\\Desktop\\Recogzi\\RecogZi\\Recogzi\\Recogzi\\Recogzi.csproj": {}
   },
   "projects": {
+    "C:\\Users\\dlorente\\Desktop\\HSK-5.0\\Domain\\HSKDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dlorente\\Desktop\\HSK-5.0\\Domain\\HSKDomain.csproj",
+        "projectName": "HSKDomain",
+        "projectPath": "C:\\Users\\dlorente\\Desktop\\HSK-5.0\\Domain\\HSKDomain.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
     "C:\\Users\\dlorente\\Desktop\\Recogzi\\RecogZi\\Recogzi\\Recogzi\\Recogzi.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -30,14 +41,14 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\dlorente\\Desktop\\Recogzi\\HSK-5.0\\Domain\\HSKDomain.csproj": {
-                "projectPath": "C:\\Users\\dlorente\\Desktop\\Recogzi\\HSK-5.0\\Domain\\HSKDomain.csproj"
+              "C:\\Users\\dlorente\\Desktop\\HSK-5.0\\Domain\\HSKDomain.csproj": {
+                "projectPath": "C:\\Users\\dlorente\\Desktop\\HSK-5.0\\Domain\\HSKDomain.csproj"
               },
-              "C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Domain\\SubripDomain.csproj": {
-                "projectPath": "C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Domain\\SubripDomain.csproj"
+              "C:\\Users\\dlorente\\Desktop\\Subrip\\Domain\\SubripDomain.csproj": {
+                "projectPath": "C:\\Users\\dlorente\\Desktop\\Subrip\\Domain\\SubripDomain.csproj"
               },
-              "C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Services\\SubripServices.csproj": {
-                "projectPath": "C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Services\\SubripServices.csproj"
+              "C:\\Users\\dlorente\\Desktop\\Subrip\\Services\\SubripServices.csproj": {
+                "projectPath": "C:\\Users\\dlorente\\Desktop\\Subrip\\Services\\SubripServices.csproj"
               }
             }
           }
@@ -73,6 +84,37 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\dlorente\\Desktop\\Subrip\\Domain\\SubripDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dlorente\\Desktop\\Subrip\\Domain\\SubripDomain.csproj",
+        "projectName": "SubripDomain",
+        "projectPath": "C:\\Users\\dlorente\\Desktop\\Subrip\\Domain\\SubripDomain.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\dlorente\\Desktop\\Subrip\\Services\\SubripServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dlorente\\Desktop\\Subrip\\Services\\SubripServices.csproj",
+        "projectName": "SubripServices",
+        "projectPath": "C:\\Users\\dlorente\\Desktop\\Subrip\\Services\\SubripServices.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\dlorente\\Desktop\\Subrip\\Domain\\SubripDomain.csproj": {
+                "projectPath": "C:\\Users\\dlorente\\Desktop\\Subrip\\Domain\\SubripDomain.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
       }
     }
   }

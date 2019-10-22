@@ -51,6 +51,36 @@
             "rid": "win"
           }
         }
+      },
+      "HSKDomain/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HSKDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HSKDomain.dll": {}
+        }
+      },
+      "SubripDomain/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SubripDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SubripDomain.dll": {}
+        }
+      },
+      "SubripServices/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "SubripDomain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SubripServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SubripServices.dll": {}
+        }
       }
     }
   },
@@ -139,13 +169,28 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "HSKDomain/1.0.0": {
+      "type": "project",
+      "path": "../../../../HSK-5.0/Domain/HSKDomain.csproj",
+      "msbuildProject": "../../../../HSK-5.0/Domain/HSKDomain.csproj"
+    },
+    "SubripDomain/1.0.0": {
+      "type": "project",
+      "path": "../../../../Subrip/Domain/SubripDomain.csproj",
+      "msbuildProject": "../../../../Subrip/Domain/SubripDomain.csproj"
+    },
+    "SubripServices/1.0.0": {
+      "type": "project",
+      "path": "../../../../Subrip/Services/SubripServices.csproj",
+      "msbuildProject": "../../../../Subrip/Services/SubripServices.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "C:\\Users\\dlorente\\Desktop\\Recogzi\\HSK-5.0\\Domain\\HSKDomain.csproj",
-      "C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Domain\\SubripDomain.csproj",
-      "C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Services\\SubripServices.csproj",
+      "HSKDomain >= 1.0.0",
+      "SubripDomain >= 1.0.0",
+      "SubripServices >= 1.0.0",
       "System.Drawing.Common >= 4.6.0"
     ]
   },
@@ -179,14 +224,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\dlorente\\Desktop\\Recogzi\\HSK-5.0\\Domain\\HSKDomain.csproj": {
-              "projectPath": "C:\\Users\\dlorente\\Desktop\\Recogzi\\HSK-5.0\\Domain\\HSKDomain.csproj"
+            "C:\\Users\\dlorente\\Desktop\\HSK-5.0\\Domain\\HSKDomain.csproj": {
+              "projectPath": "C:\\Users\\dlorente\\Desktop\\HSK-5.0\\Domain\\HSKDomain.csproj"
             },
-            "C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Domain\\SubripDomain.csproj": {
-              "projectPath": "C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Domain\\SubripDomain.csproj"
+            "C:\\Users\\dlorente\\Desktop\\Subrip\\Domain\\SubripDomain.csproj": {
+              "projectPath": "C:\\Users\\dlorente\\Desktop\\Subrip\\Domain\\SubripDomain.csproj"
             },
-            "C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Services\\SubripServices.csproj": {
-              "projectPath": "C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Services\\SubripServices.csproj"
+            "C:\\Users\\dlorente\\Desktop\\Subrip\\Services\\SubripServices.csproj": {
+              "projectPath": "C:\\Users\\dlorente\\Desktop\\Subrip\\Services\\SubripServices.csproj"
             }
           }
         }
@@ -223,34 +268,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Domain\\SubripDomain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Domain\\SubripDomain.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\dlorente\\Desktop\\Recogzi\\HSK-5.0\\Domain\\HSKDomain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\dlorente\\Desktop\\Recogzi\\HSK-5.0\\Domain\\HSKDomain.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Services\\SubripServices.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\dlorente\\Desktop\\Recogzi\\Subrip\\Services\\SubripServices.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.0"
-      ]
-    }
-  ]
+  }
 }

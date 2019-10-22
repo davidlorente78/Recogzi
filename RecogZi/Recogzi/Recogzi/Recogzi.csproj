@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -10,9 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\HSK-5.0\Domain\HSKDomain.csproj" />
-    <ProjectReference Include="..\..\..\Subrip\Domain\SubripDomain.csproj" />
-    <ProjectReference Include="..\..\..\Subrip\Services\SubripServices.csproj" />
+    <ProjectReference Include="..\..\..\..\HSK-5.0\Domain\HSKDomain.csproj" />
+    <ProjectReference Include="..\..\..\..\Subrip\Domain\SubripDomain.csproj" />
+    <ProjectReference Include="..\..\..\..\Subrip\Services\SubripServices.csproj" />
   </ItemGroup>
 
 </Project>
