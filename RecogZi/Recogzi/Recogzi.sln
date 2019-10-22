@@ -5,13 +5,13 @@ VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recogzi", "Recogzi\Recogzi.csproj", "{5D7DAC00-EC3E-44B2-8636-10E9059B8B95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSKDomainServices", "..\..\HSK-5.0\DomainServices\HSKDomainServices.csproj", "{EC92C5B8-3691-455A-A4B8-B46670AB0260}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSKDomainServices", "..\..\..\HSK-5.0\DomainServices\HSKDomainServices.csproj", "{EC92C5B8-3691-455A-A4B8-B46670AB0260}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSKDomain", "..\..\HSK-5.0\Domain\HSKDomain.csproj", "{F863C3C1-F759-44ED-8776-9D380DCFF4CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSKDomain", "..\..\..\HSK-5.0\Domain\HSKDomain.csproj", "{F863C3C1-F759-44ED-8776-9D380DCFF4CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubripDomain", "..\..\Subrip\Domain\SubripDomain.csproj", "{905F1B45-C07D-4317-97F4-3D3AB9033342}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubripDomain", "..\..\..\Subrip\Domain\SubripDomain.csproj", "{905F1B45-C07D-4317-97F4-3D3AB9033342}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubripServices", "..\..\Subrip\Services\SubripServices.csproj", "{5CB1E0B4-A87C-42DC-80E6-5C49BF507FA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubripServices", "..\..\..\Subrip\Services\SubripServices.csproj", "{5CB1E0B4-A87C-42DC-80E6-5C49BF507FA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
