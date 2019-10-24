@@ -3,8 +3,7 @@
 namespace Recogzi.FileWriters
 {
 	public static class FileWriter
-	{
-		
+	{	
 		public static void AddLine(string line, string path)
 		{
 			if (!File.Exists(path))

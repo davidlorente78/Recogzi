@@ -16,6 +16,7 @@ namespace Recogzi
 			int R = Color.Black.R;
 			int V = Color.Black.G;
 			int A = Color.Black.B;
+			int AA = Color.Black.A;
 
 			StringBuilder sb = new StringBuilder();
 			sb.Append(c.ToString() + ",");
@@ -26,7 +27,7 @@ namespace Recogzi
 				{
 					Color color = bitmap.GetPixel(i, j);
 
-					if ((((R == color.R) && (color.G == V) && (A == color.B))))
+					if ((((R == color.R) && (color.G == V) && (A == color.B) && (color.A == AA))))
 					{
 						sb.Append("1,");
 					}
@@ -43,11 +44,9 @@ namespace Recogzi
 
 			var hsk1 = ReaderFactory.GetHSKReader(1);
 			ArrayList words = hsk1.AllWords();
-
 			ArrayList chars = new ArrayList();
 			foreach (Word w in words)
 			{
-
 				foreach (Char c in w.Character)
 				{
 					if (!chars.Contains(c))
