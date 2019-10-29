@@ -64,9 +64,9 @@ let main argv =
 
     let euclidianClassifier = train trainingdata euclidianDistance
 
+    //Return Methods
     let euclidianTest0 = euclidianClassifier croppedData.[0].Pixels
     let manhattanTest0= manhattanClassifier croppedData.[0].Pixels
-
     let euclidianTest1 = euclidianClassifier croppedData.[1].Pixels
     let manhattanTest1 = manhattanClassifier croppedData.[1].Pixels
     let euclidianTest2 = euclidianClassifier croppedData.[2].Pixels
