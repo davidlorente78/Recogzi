@@ -14,7 +14,7 @@ let main argv =
 
     let reader path =
         let data = File.ReadAllLines path
-        data.[1..]
+        data.[0..]
         |>Array.map toObservation
 
     let datasetPath = @"C:\Users\dlorente\Desktop\Recogzi\dataset.csv"
@@ -30,7 +30,7 @@ let main argv =
 
     printfn "m = %i" m
 
-    let zi = data.[34].Label
+    let zi = data.[1].Label
 
 
     let cropCount = croppedData.Length
@@ -72,24 +72,5 @@ let main argv =
     let euclidianTest2 = euclidianClassifier croppedData.[2].Pixels
     let manhattanTest2 = manhattanClassifier croppedData.[2].Pixels
 
-    let euclidianTest3 = euclidianClassifier croppedData.[3].Pixels
-    let manhattanTest4 = manhattanClassifier croppedData.[3].Pixels
-
-
-
-    //printf "Calculating Accurancy with Manhattan distance\n"
-    //validationdata
-    //|> Array.averageBy (fun x-> if manhattanClassifier x.Pixels = x.Label then 100. else 0.)
-    //|> printfn "manhattanClassifier Correct %.3f "
-
-    //printf "Calculating Accurancy with Euclidian distance\n"
-    //validationdata
-    //|> Array.averageBy (fun x-> if euclidianClassifier x.Pixels = x.Label then 100. else 0.)
-    //|> printfn "euclidianClassifier Correct %f "
-
-    //printf "Calculating Accurancy using training data. Bad practice!"
-    //trainingdata
-    //|> Array.averageBy (fun x-> if euclidianClassifier x.Pixels = x.Label then 100. else 0.)
-    //|> printfn "Using training data Correct %f "
-    
+  
     0 // return an integer exit code

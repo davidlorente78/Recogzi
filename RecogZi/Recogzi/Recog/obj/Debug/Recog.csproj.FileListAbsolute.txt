@@ -22,3 +22,5 @@ C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\Recog\obj\Debug\Recog.csprojAs
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\Recog\obj\Debug\Recog.csproj.CopyComplete
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\Recog\obj\Debug\Recog.exe
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\Recog\obj\Debug\Recog.pdb
+C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\Recog\bin\Debug\DomainServicesHSK.dll
+C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\Recog\bin\Debug\DomainServicesHSK.pdb

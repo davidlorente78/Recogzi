@@ -1,4 +1,5 @@
 ﻿using Domain.ReadersFactory;
+using DomainServices;
 using HSK;
 using Recogzi.FileWriters;
 using SubripServices;
@@ -40,12 +41,22 @@ namespace Recogzi
 			return sb.ToString();
 		}
 
-		public static void GenerateDataSet() {
+		public static void GenerateDataSet(int level)
+		{
 
-			var hsk1 = ReaderFactory.GetHSKReader(1);
-			ArrayList words = hsk1.AllWords();
+			ArrayList all = new ArrayList();
+
+			DictionaryService dictionaryService = new DictionaryService();
+
+			for (int i = 1; i <= level; i++)
+			{
+				ArrayList words = dictionaryService.GetAllWords(i);
+				all.AddRange(words);
+			}
+
 			ArrayList chars = new ArrayList();
-			foreach (Word w in words)
+
+			foreach (Word w in all)
 			{
 				foreach (Char c in w.Character)
 				{
@@ -53,15 +64,62 @@ namespace Recogzi
 					{
 						chars.Add(c);
 
-						var Projection = ProjectionService.GenerateProjectionfromFontChar(c, new Size(32, 32), 28);
-						Projection.Bitmap.Save(@"C:\Users\dlorente\Desktop\RecogZi\Bitmaps\" + c.ToString() + ".bmp");
+						var Projection = ProjectionService.GenerateProjectionfromFontChar(c, new Size(32, 32), 28, "DengXian", FontStyle.Regular);
 						var sequence = ToZerosOnesSequence(c, Projection.Bitmap);
-						
 						string path = @"C:\Users\dlorente\Desktop\RecogZi\dataset.csv";
-						FileWriter.AddLine(sequence,path);
+						FileWriter.AddLine(sequence, path);
 					}
 				}
 			}
+
+			foreach (Word w in all)
+			{
+				foreach (Char c in w.Character)
+				{
+					if (!chars.Contains(c))
+					{
+						chars.Add(c);
+
+						var Projection = ProjectionService.GenerateProjectionfromFontChar(c, new Size(32, 32), 28, "DengXian Light", FontStyle.Regular);
+						var sequence = ToZerosOnesSequence(c, Projection.Bitmap);
+						string path = @"C:\Users\dlorente\Desktop\RecogZi\dataset.csv";
+						FileWriter.AddLine(sequence, path);
+					}
+				}
+			}
+
+			foreach (Word w in all)
+			{
+				foreach (Char c in w.Character)
+				{
+					if (!chars.Contains(c))
+					{
+						chars.Add(c);
+
+						var Projection = ProjectionService.GenerateProjectionfromFontChar(c, new Size(32, 32), 28, "DengXian", FontStyle.Italic);
+						var sequence = ToZerosOnesSequence(c, Projection.Bitmap);
+						string path = @"C:\Users\dlorente\Desktop\RecogZi\dataset.csv";
+						FileWriter.AddLine(sequence, path);
+					}
+				}
+			}
+
+			foreach (Word w in all)
+			{
+				foreach (Char c in w.Character)
+				{
+					if (!chars.Contains(c))
+					{
+						chars.Add(c);
+
+						var Projection = ProjectionService.GenerateProjectionfromFontChar(c, new Size(32, 32), 28, "DengXian Light", FontStyle.Italic);
+						var sequence = ToZerosOnesSequence(c, Projection.Bitmap);
+						string path = @"C:\Users\dlorente\Desktop\RecogZi\dataset.csv";
+						FileWriter.AddLine(sequence, path);
+					}
+				}
+			}
+
 		}
 
 
