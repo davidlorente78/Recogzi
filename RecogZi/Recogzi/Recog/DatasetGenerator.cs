@@ -1,5 +1,4 @@
-﻿using Domain.ReadersFactory;
-using DomainServices;
+﻿using DomainServices;
 using HSK;
 using Recogzi.FileWriters;
 using SubripServices;
@@ -12,6 +11,7 @@ namespace Recogzi
 {
 	public class DatasetGenerator
 	{
+		public static string datasetPath = @"C:\Users\dlorente\Desktop\RecogZi\dataset.csv";
 		public static string ToZerosOnesSequence(char c, Bitmap bitmap)
 		{
 			int R = Color.Black.R;
@@ -66,8 +66,7 @@ namespace Recogzi
 
 						var Projection = ProjectionService.GenerateProjectionfromFontChar(c, new Size(32, 32), 28, "DengXian", FontStyle.Regular);
 						var sequence = ToZerosOnesSequence(c, Projection.Bitmap);
-						string path = @"C:\Users\dlorente\Desktop\RecogZi\dataset.csv";
-						FileWriter.AddLine(sequence, path);
+						FileWriter.AddLine(sequence, datasetPath);
 					}
 				}
 			}
@@ -98,8 +97,7 @@ namespace Recogzi
 
 						var Projection = ProjectionService.GenerateProjectionfromFontChar(c, new Size(32, 32), 28, "DengXian", FontStyle.Italic);
 						var sequence = ToZerosOnesSequence(c, Projection.Bitmap);
-						string path = @"C:\Users\dlorente\Desktop\RecogZi\dataset.csv";
-						FileWriter.AddLine(sequence, path);
+						FileWriter.AddLine(sequence, datasetPath);
 					}
 				}
 			}
@@ -114,8 +112,8 @@ namespace Recogzi
 
 						var Projection = ProjectionService.GenerateProjectionfromFontChar(c, new Size(32, 32), 28, "DengXian Light", FontStyle.Italic);
 						var sequence = ToZerosOnesSequence(c, Projection.Bitmap);
-						string path = @"C:\Users\dlorente\Desktop\RecogZi\dataset.csv";
-						FileWriter.AddLine(sequence, path);
+
+						FileWriter.AddLine(sequence, datasetPath);
 					}
 				}
 			}

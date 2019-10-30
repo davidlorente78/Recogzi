@@ -21,7 +21,6 @@ C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\bin\Debug\netcoreap
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\bin\Debug\netcoreapp3.0\tr\FSharp.Core.resources.dll
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\bin\Debug\netcoreapp3.0\zh-Hans\FSharp.Core.resources.dll
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\bin\Debug\netcoreapp3.0\zh-Hant\FSharp.Core.resources.dll
-C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\obj\Debug\netcoreapp3.0\RecogZiAPI.fsprojAssemblyReference.cache
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\obj\Debug\netcoreapp3.0\staticwebassets\RecogZiAPI.StaticWebAssets.Manifest.cache
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\obj\Debug\netcoreapp3.0\staticwebassets\RecogZiAPI.StaticWebAssets.xml
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\obj\Debug\netcoreapp3.0\RecogZiAPI.MvcApplicationPartsAssemblyInfo.cache
@@ -30,3 +29,4 @@ C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\obj\Debug\netcoreap
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\obj\Debug\netcoreapp3.0\RecogZiAPI.fsproj.CopyComplete
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\obj\Debug\netcoreapp3.0\RecogZiAPI.dll
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\obj\Debug\netcoreapp3.0\RecogZiAPI.pdb
+C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\RecogZiAPI\obj\Debug\netcoreapp3.0\RecogZiAPI.fsprojAssemblyReference.cache

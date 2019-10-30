@@ -6,8 +6,8 @@
 
   <ItemGroup>
     <Compile Include="MLTraining.fs" />
-    <Compile Include="WeatherForecast.fs" />
-    <Compile Include="Controllers/WeatherForecastController.fs" />
+    <Compile Include="Controllers\PredictController.fs" />
+    <Compile Include="Controllers\IndexController.fs" />
     <Compile Include="Startup.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
