@@ -3,6 +3,7 @@
 open System
 open Microsoft.AspNetCore.Mvc
 open Microsoft.Extensions.Logging
+open RecogZiAPI
 
 [<ApiController>]
 [<Route("[controller]")>]
@@ -12,7 +13,7 @@ type PredictController (logger : ILogger<PredictController>) =
 
     [<HttpGet>]
     member __.Get() : Char =
-        let zi = '你'
+        let zi = '你'       
         zi
 
     [<HttpGet("{id}")>]
