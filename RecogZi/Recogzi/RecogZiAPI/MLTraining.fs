@@ -1,11 +1,8 @@
 ﻿namespace RecogZiAPI
 
-open System
 open System.IO
 
-
-
-type Observation = {Label : String ; Pixels : int []}
+type Observation = {Label : string ; Pixels : int []}
 type Distance = int[] * int [] -> int
 
 type MLTraining ()=
