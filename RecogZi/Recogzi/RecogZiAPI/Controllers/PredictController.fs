@@ -1,22 +1,26 @@
 ﻿namespace RecogZiAPI.Controllers
 
-open System
 open Microsoft.AspNetCore.Mvc
 open Microsoft.Extensions.Logging
-open RecogZiAPI
+open Domain.DataSet
+open Training.Operations
+
 
 [<ApiController>]
 [<Route("[controller]")>]
 type PredictController (logger : ILogger<PredictController>) =
     inherit ControllerBase()
     
-
     [<HttpGet>]
-    member __.Get() : Char =
-        let zi = '你'       
-        zi
+    member this.Get()  =
+        let query = this.Request.Query
+        
+        //https://localhost:44333/Predict?data=10010
+        let data = query.["data"] 
+        
+        let pixels = [|1;0;0;1;0|]
+        let euclidianPrediction = Training.Operations.euclidianClassifier pixels    
+    
+        ActionResult<string>(euclidianPrediction)
 
-    [<HttpGet("{id}")>]
-    member __.Predict(id) =
-        let s = "你好"  
-        s
+

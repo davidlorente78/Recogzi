@@ -21,3 +21,4 @@ C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\bin\Deb
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\obj\Debug\MachineLearningRecogzi.fsproj.CopyComplete
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\obj\Debug\MachineLearningRecogzi.exe
 C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\obj\Debug\MachineLearningRecogzi.pdb
+C:\Users\dlorente\Desktop\Recogzi\RecogZi\Recogzi\MachineLearningRecogzi\obj\Debug\MachineLearningRecogzi.fsprojAssemblyReference.cache
