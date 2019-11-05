@@ -13,14 +13,11 @@ type PredictController (logger : ILogger<PredictController>) =
     
     [<HttpGet>]
     member this.Get()  =
-        let query = this.Request.Query
-        
+        let query = this.Request.Query        
+        let inline charToInt c = int c - int '0'
         //https://localhost:44333/Predict?data=10010
-        let data = query.["data"] 
-        
-        let pixels = [|1;0;0;1;0|]
-        let euclidianPrediction = Training.Operations.euclidianClassifier pixels    
-    
+        let pixels = query.["data"].ToString() |>  Seq.map  charToInt|> Seq.toArray      
+        let euclidianPrediction = Training.Operations.euclidianClassifier pixels        
         ActionResult<string>(euclidianPrediction)
 
 

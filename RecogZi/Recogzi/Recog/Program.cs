@@ -11,7 +11,7 @@ namespace Recog
 	{
 		static void Main(string[] args)
 		{
-			int level = 2;
+			int level = 5;
 			DatasetGenerator.GenerateDataSet(level);
 		}
 	}
