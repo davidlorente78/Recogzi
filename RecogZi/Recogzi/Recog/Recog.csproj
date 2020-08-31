@@ -33,6 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DomainHSK">
+      <HintPath>..\..\..\..\Subrip\Subrip\bin\Debug\DomainHSK.dll</HintPath>
+    </Reference>
+    <Reference Include="DomainServicesHSK">
+      <HintPath>..\..\..\..\Subrip\Subrip\bin\Debug\DomainServicesHSK.dll</HintPath>
+    </Reference>
+    <Reference Include="SubripDomain">
+      <HintPath>..\..\..\..\Subrip\Domain\bin\Debug\SubripDomain.dll</HintPath>
+    </Reference>
+    <Reference Include="SubripServices">
+      <HintPath>..\..\..\..\Subrip\Services\bin\Debug\SubripServices.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -51,24 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\HSK-5.0\DomainServices\HSKDomainServices.csproj">
-      <Project>{EC92C5B8-3691-455A-A4B8-B46670AB0260}</Project>
-      <Name>HSKDomainServices</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\HSK-5.0\Domain\HSKDomain.csproj">
-      <Project>{f863c3c1-f759-44ed-8776-9d380dcff4cf}</Project>
-      <Name>HSKDomain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Subrip\Domain\SubripDomain.csproj">
-      <Project>{905f1b45-c07d-4317-97f4-3d3ab9033342}</Project>
-      <Name>SubripDomain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Subrip\Services\SubripServices.csproj">
-      <Project>{5cb1e0b4-a87c-42dc-80e6-5c49bf507fa9}</Project>
-      <Name>SubripServices</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

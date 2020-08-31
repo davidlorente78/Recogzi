@@ -3,21 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSKDomainServices", "..\..\..\HSK-5.0\DomainServices\HSKDomainServices.csproj", "{EC92C5B8-3691-455A-A4B8-B46670AB0260}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSKDomain", "..\..\..\HSK-5.0\Domain\HSKDomain.csproj", "{F863C3C1-F759-44ED-8776-9D380DCFF4CF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubripDomain", "..\..\..\Subrip\Domain\SubripDomain.csproj", "{905F1B45-C07D-4317-97F4-3D3AB9033342}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubripServices", "..\..\..\Subrip\Services\SubripServices.csproj", "{5CB1E0B4-A87C-42DC-80E6-5C49BF507FA9}"
-EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MachineLearningRecogzi", "MachineLearningRecogzi\MachineLearningRecogzi.fsproj", "{3026BC9E-A6AD-424E-84A1-BC1B588EDB0D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subrip", "..\..\..\SubRip\Subrip\Subrip.csproj", "{DC5E2CB1-7B7C-490B-8584-A4B284B27A92}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recog", "Recog\Recog.csproj", "{E7603081-1718-401A-8196-6538BB5D66AE}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RecogZiAPI", "RecogZiAPI\RecogZiAPI.fsproj", "{A2633C60-FCE3-4697-A27D-FD1047188F2F}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RecogZiAPI", "RecogZiAPI\RecogZiAPI.fsproj", "{A2633C60-FCE3-4697-A27D-FD1047188F2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,30 +15,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EC92C5B8-3691-455A-A4B8-B46670AB0260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC92C5B8-3691-455A-A4B8-B46670AB0260}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC92C5B8-3691-455A-A4B8-B46670AB0260}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC92C5B8-3691-455A-A4B8-B46670AB0260}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F863C3C1-F759-44ED-8776-9D380DCFF4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F863C3C1-F759-44ED-8776-9D380DCFF4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F863C3C1-F759-44ED-8776-9D380DCFF4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F863C3C1-F759-44ED-8776-9D380DCFF4CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{905F1B45-C07D-4317-97F4-3D3AB9033342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{905F1B45-C07D-4317-97F4-3D3AB9033342}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{905F1B45-C07D-4317-97F4-3D3AB9033342}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{905F1B45-C07D-4317-97F4-3D3AB9033342}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5CB1E0B4-A87C-42DC-80E6-5C49BF507FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5CB1E0B4-A87C-42DC-80E6-5C49BF507FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5CB1E0B4-A87C-42DC-80E6-5C49BF507FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5CB1E0B4-A87C-42DC-80E6-5C49BF507FA9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3026BC9E-A6AD-424E-84A1-BC1B588EDB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3026BC9E-A6AD-424E-84A1-BC1B588EDB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3026BC9E-A6AD-424E-84A1-BC1B588EDB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3026BC9E-A6AD-424E-84A1-BC1B588EDB0D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC5E2CB1-7B7C-490B-8584-A4B284B27A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC5E2CB1-7B7C-490B-8584-A4B284B27A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC5E2CB1-7B7C-490B-8584-A4B284B27A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC5E2CB1-7B7C-490B-8584-A4B284B27A92}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E7603081-1718-401A-8196-6538BB5D66AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E7603081-1718-401A-8196-6538BB5D66AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7603081-1718-401A-8196-6538BB5D66AE}.Release|Any CPU.ActiveCfg = Release|Any CPU

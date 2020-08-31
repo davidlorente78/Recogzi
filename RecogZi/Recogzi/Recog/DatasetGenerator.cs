@@ -9,7 +9,7 @@ using System.Text;
 
 namespace Recogzi
 {
-	public class DatasetGenerator
+    public class DatasetGenerator
 	{
 		public static string datasetPath = @"C:\Users\dlorente\Desktop\RecogZi\dataset.csv";
 		public static string ToZerosOnesSequence(char c, Bitmap bitmap)

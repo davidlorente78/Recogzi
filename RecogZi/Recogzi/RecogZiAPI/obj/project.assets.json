@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "FSharp.Core/4.7.0": {
+      "FSharp.Core/4.7.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/FSharp.Core.dll": {}
@@ -55,14 +55,15 @@
     }
   },
   "libraries": {
-    "FSharp.Core/4.7.0": {
-      "sha512": "6Bf2qzSCaJoP6tTfO+a5muUS7QbyJANqSut73zQvwQ9It5P0ITz9VKseeia2ofco30c55EQ0jA2wf2+A2gpGnw==",
+    "FSharp.Core/4.7.2": {
+      "sha512": "w3XFVTnyZUbC8e2QT6a85ern6y7eQPPk+MYemz1FP0iBfgZcembL+wmo5cIZ1kxB8jfoXC8Q9KVkOMsGpkBKbA==",
       "type": "package",
-      "path": "fsharp.core/4.7.0",
+      "path": "fsharp.core/4.7.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fsharp.core.4.7.0.nupkg.sha512",
+        "Icon.png",
+        "fsharp.core.4.7.2.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/net45/FSharp.Core.dll",
         "lib/net45/FSharp.Core.optdata",
@@ -103,27 +104,23 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "FSharp.Core >= 4.7.0"
+      "FSharp.Core >= 4.7.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dlorente\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\David\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dlorente\\Desktop\\Recogzi\\RecogZi\\Recogzi\\RecogZiAPI\\RecogZiAPI.fsproj",
+      "projectUniqueName": "C:\\Users\\David\\Desktop\\Recogzi\\RecogZi\\Recogzi\\RecogZiAPI\\RecogZiAPI.fsproj",
       "projectName": "RecogZiAPI",
-      "projectPath": "C:\\Users\\dlorente\\Desktop\\Recogzi\\RecogZi\\Recogzi\\RecogZiAPI\\RecogZiAPI.fsproj",
-      "packagesPath": "C:\\Users\\dlorente\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dlorente\\Desktop\\Recogzi\\RecogZi\\Recogzi\\RecogZiAPI\\obj\\",
+      "projectPath": "C:\\Users\\David\\Desktop\\Recogzi\\RecogZi\\Recogzi\\RecogZiAPI\\RecogZiAPI.fsproj",
+      "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\David\\Desktop\\Recogzi\\RecogZi\\Recogzi\\RecogZiAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\dlorente\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -144,7 +141,8 @@
         "dependencies": {
           "FSharp.Core": {
             "target": "Package",
-            "version": "[4.7.0, )"
+            "version": "[4.7.2, )",
+            "generatePathProperty": true
           }
         },
         "imports": [
@@ -157,6 +155,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.0.3, 3.0.3]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -165,7 +181,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
